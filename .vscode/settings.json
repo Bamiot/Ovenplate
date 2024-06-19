@@ -1,0 +1,22 @@
+{
+  "editor.tabSize": 2,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "docker-compose.yml": "Dockerfile, .dockerignore",
+    "Dockerfile": ".dockerignore",
+    "README*": "LICENSE*, .gitignore, CHANGELOG*",
+    ".env": ".env.local",
+    ".eslintrc.json": ".prettierrc.json",
+    "tailwind.config.ts": "postcss.config.mjs, components.json"
+  },
+  "files.exclude": {
+    /* Node */
+    "node_modules": true,
+
+    /* NextJs */
+    "next-env.d.ts": true,
+
+    /* Typescript */
+    "tsconfig.json": false
+  }
+}

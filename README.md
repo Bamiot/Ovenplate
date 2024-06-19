@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ovenplate
 
-## Getting Started
+This is a template for Next.js with Bun. It's a full-featured stack for building web applications with a focus on developer experience and production readiness.
 
-First, run the development server:
+# Stack
+
+- **Runtime**: [Bun 1.x](https://bun.sh/)
+- **JavaScript Framework**: [Next.js 14](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **CSS Framework**: [Tailwind CSS](https://tailwindcss.com/)
+- **Linting**: [ESLint](https://eslint.org/)
+- **Formatting**: [Prettier](https://prettier.io/)
+- **Testing**: [Bun Test](https://bun.sh/docs/test/writing)
+- **Components**: [shadcn/ui](https://ui.shadcn.com/) with a small selection of pre-installed components
+- **Form**: [React Hook Form](https://react-hook-form.com/) with [Zod](https://zod.dev/) **validation**. see usage on [shadcn docs](https://ui.shadcn.com/docs/components/form)
+- State Management: [Zustand](https://zustand.surge.sh/)
+
+# Features
+
+## Theming
+
+(WIP)
+
+## Localization
+
+(WIP)
+
+# Installation
+
+## Prerequisites
+
+This stack use Bun if you don't have it installed yet, you can install it in one command line. Refere to [Bun Installation](https://bun.sh/docs/installation).
+
+## Clone or use template
+
+Use this repository as a template or clone it.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/bamiot/next-template.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+bun --bun run dev
+```
 
-## Learn More
+## Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+docker compose up
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+or
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+use [Portainer](https://www.portainer.io/) to deploy the stack
 
-## Deploy on Vercel
+# License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[unlicense](https://unlicense.org/) - public domain
