@@ -30,7 +30,6 @@ COPY --from=prerelease /app/.next/static ./.next/static
 
 USER nextjs
 EXPOSE 3000/tcp
-# CMD ["bun", "server.js"]
 ENTRYPOINT ["bun", "server.js"]
 
 

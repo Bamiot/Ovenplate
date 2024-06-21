@@ -3,9 +3,9 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: <container-name>
+    container_name: container-name
     restart: always
     environment:
       - TZ=Europe/Paris
     ports:
-      - "3000:3000"
+      - '3000:3000'

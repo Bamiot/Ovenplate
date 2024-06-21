@@ -1,13 +1,15 @@
 {
   "editor.tabSize": 2,
   "explorer.fileNesting.enabled": true,
+  "css.customData": [".vscode/tailwind.json"],
   "explorer.fileNesting.patterns": {
     "docker-compose.yml": "Dockerfile, .dockerignore",
     "Dockerfile": ".dockerignore",
     "README*": "LICENSE*, .gitignore, CHANGELOG*",
     ".env": ".env.local",
     ".eslintrc.json": ".prettierrc.json",
-    "tailwind.config.ts": "postcss.config.mjs, components.json"
+    "tailwind.config.ts": "postcss.config.mjs, components.json",
+    "*.tsx": "*.test.ts"
   },
   "files.exclude": {
     /* Node */
