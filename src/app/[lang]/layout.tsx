@@ -31,6 +31,7 @@ export async function generateMetadata(props: RootLayoutProps) {
 
 export default async function RootLayout(props: RootLayoutProps) {
   const dictionary = await getDictionary(props.params.lang)
+
   return (
     <html lang={props.params.lang} suppressHydrationWarning>
       <body className={cn(inter.className, 'p-0 m-0')}>

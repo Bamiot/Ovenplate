@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { NavigationMenuLink } from '@/components/shadcn/navigation-menu'
 import { cn } from '@/lib/utils'
+import { getPathnameWithoutLocale, getLocale } from '@/lib/localPath'
 
 type NavLinkProps = {
   href: string
@@ -12,14 +13,17 @@ type NavLinkProps = {
 }
 
 export const NavLink = (props: NavLinkProps) => {
-  const isActive = usePathname()?.includes(props.href)
-  const active = isActive ? '!font-extrabold' : ''
-
+  const pathNameWithoutLocale = getPathnameWithoutLocale(usePathname())
+  const locale = getLocale(usePathname())
   return (
-    <Link href={props.href} passHref>
+    <Link href={`/${locale}${props.href}`} passHref>
       <NavigationMenuLink
         asChild={true}
-        className={cn('!text-lg', active, props.className)}
+        className={cn(
+          '!text-lg',
+          pathNameWithoutLocale === props.href && '!font-extrabold',
+          props.className
+        )}
       >
         <p>{props.children}</p>
       </NavigationMenuLink>

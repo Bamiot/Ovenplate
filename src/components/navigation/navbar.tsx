@@ -16,6 +16,7 @@ import { LangSelect } from '../ui/langSelect'
 
 export function Navbar() {
   const { home } = useDictionary()
+
   return (
     <nav
       className={cn(
@@ -28,6 +29,9 @@ export function Navbar() {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavLink href='/'>{home}</NavLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavLink href='/test'>test</NavLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
