@@ -65,8 +65,16 @@ git clone https://github.com/bamiot/next-template.git
 
 ## Development
 
+### With Bun
+
 ```bash
 bun --bun run dev
+```
+
+### With Node
+
+```bash
+bun run dev
 ```
 
 ## Production
