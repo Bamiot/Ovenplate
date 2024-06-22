@@ -1,7 +1,7 @@
 'use client'
 
 import { ThemeProvider } from 'next-themes'
-import { TooltipProvider } from '@/components/ui/tooltip'
+import { TooltipProvider } from '@/components/shadcn/tooltip'
 
 const themeProps = {
   themes: ['light', 'dark'],

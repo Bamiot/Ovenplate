@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 import { locales, DictionaryProvider } from '@/localization'
 import { getDictionary } from '@/localization/dictionaries'
 import { UIProviders } from '@/components/providers/ui.provider'
+import { Navbar } from '@/components/navigation/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,7 +35,10 @@ export default async function RootLayout(props: RootLayoutProps) {
     <html lang={props.params.lang} suppressHydrationWarning>
       <body className={cn(inter.className, 'p-0 m-0')}>
         <DictionaryProvider dictionary={dictionary}>
-          <UIProviders>{props.children}</UIProviders>
+          <UIProviders>
+            <Navbar />
+            {props.children}
+          </UIProviders>
         </DictionaryProvider>
       </body>
     </html>
