@@ -6,7 +6,7 @@
     "docker-compose.yml": "Dockerfile, .dockerignore",
     "Dockerfile": ".dockerignore",
     "README*": "LICENSE*, .gitignore, CHANGELOG*",
-    ".env": ".env.local",
+    ".env": ".env*",
     ".eslintrc.json": ".prettierrc.json",
     "tailwind.config.ts": "postcss.config.mjs, components.json",
     "*.tsx": "*.test.ts"

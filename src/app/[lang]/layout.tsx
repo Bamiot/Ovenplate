@@ -24,7 +24,7 @@ export async function generateMetadata(props: RootLayoutProps) {
   const dictionary = await getDictionary(props.params.lang)
 
   return {
-    title: 'Create Next App',
+    title: process.env.NEXT_PUBLIC_APP_NAME,
     description: dictionary.metaDescription,
   } as Metadata
 }

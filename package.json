@@ -1,5 +1,6 @@
 {
   "name": "next-template",
+  "description": "Ovenplate - a Nextjs Boilerplate.",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -24,8 +25,6 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.0",
     "server-only": "^0.0.1",
-    "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8",
     "zustand": "^4.5.2"
   },
@@ -40,6 +39,8 @@
     "postcss": "^8.4.38",
     "prettier": "^3.3.2",
     "tailwindcss": "^3.4.4",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.2"
   }
 }

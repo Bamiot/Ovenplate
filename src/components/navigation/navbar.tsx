@@ -59,7 +59,7 @@ export function Navbar() {
             <NavLink href='/'>{home}</NavLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavLink href='/test'>test</NavLink>
+            <NavLink href='/page2'>Page 2</NavLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
